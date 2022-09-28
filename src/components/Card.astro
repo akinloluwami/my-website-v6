@@ -4,23 +4,41 @@ export interface Props {
   description: string;
   url: string;
   emoji: string;
+  tags: Array<any>;
+  logo: string;
 }
 
-const { href, title, description, url, emoji } = Astro.props;
+const { title, description, url, emoji, tags, logo } = Astro.props;
 ---
 
 <li
   class="block rounded-md border border-gray7 px-4 py-4 transition-effects hover:border-gray8 focus:outline-none focus:ring focus:ring-gray7 dark:border-gray7-dark dark:hover:border-gray8-dark dark:focus:ring-gray7-dark my-7"
 >
   <a href={url} target="_blank">
-    <h2 class="flex items-center">
-      {title}
+    <div class="flex items-center">
+      <img src={logo} width="30px" class="mr-1" />
+      <h2 class="text-xl font-bold">
+        {title}
+      </h2>
       <span>
-        <img src={emoji} width="30px" />
+        <img src={emoji} width="30px" class="ml-1" />
       </span>
-    </h2>
-    <p class="text-sm font-thin">
+    </div>
+    <p class="text-md my-2">
       {description}
     </p>
+    <ul class="flex flex-wrap">
+      {
+        tags.map((t) => (
+          <li
+            class="rounded-xl m-2 px-2 text-sm"
+            style={`background-color:${t.bg}; color:${t.text}`}
+          >
+            <i class={t.icon} />
+            {t.title}
+          </li>
+        ))
+      }
+    </ul>
   </a>
 </li>
