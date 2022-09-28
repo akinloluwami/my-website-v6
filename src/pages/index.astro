@@ -1,0 +1,54 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import projects from "../../utils/Projects";
+---
+
+<Layout title="Akinkunmi">
+  <main
+    class="container mx-auto max-w-3xl space-y-8 px-4 py-10 lg:space-y-10 lg:py-12"
+  >
+    <header>
+      <h1 class="text-3xl font-bold flex items-center">
+        Hi, I'm Akinkunmi
+        <img
+          src="https://cdn.joypixels.com/products/previews/O6D7BMG8R2DMMNC4LLZH/2311_1hGcwOlOK6CDJaItpeRaYzO1Lh8DPFFK.gif"
+          alt=""
+          width="50px"
+          class="ml-2"
+        />
+      </h1>
+      <p class="text-lg my-3 font-light text-gray-400">
+        Software engineer && startup founder
+      </p>
+      <p class="font-thin">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+        veritatis aspernatur repudiandae quo vero quidem, sed illo eligendi
+        deleniti ex.
+      </p>
+    </header>
+
+    <section>
+      <h2 class="text-3xl flex items-center">
+        Stuff I've built
+        <img
+          src="https://cdn.joypixels.com/products/previews/O6D7BMG8R2DMMNC4LLZH/3106_9qTxA57k7StZYhBXKh2beVpviSqO5Anr.gif"
+          alt=""
+          width="30px"
+        />
+      </h2>
+      <ul class="">
+        {
+          projects.map((project) => (
+            <Card
+              title={project.name}
+              description={project.description}
+              url={project.url}
+              emoji={project.emoji}
+            />
+          ))
+        }
+      </ul>
+    </section>
+  </main>
+</Layout>
