@@ -31,7 +31,7 @@ const { title, description, url, emoji, tags, logo } = Astro.props;
       {
         tags.map((t) => (
           <li
-            class="rounded-xl m-2 px-2 text-sm"
+            class="rounded-xl m-2 px-2 text-sm flex items-center gap-1"
             style={`background-color:${t.bg}; color:${t.text}`}
           >
             <i class={t.icon} />
