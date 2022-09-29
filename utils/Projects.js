@@ -1,4 +1,3 @@
-import React from "react";
 import ctrlv from "../public/ctrlv.png";
 import messageme from "../public/messageme.png";
 import quickk from "../public/quickk.png";
