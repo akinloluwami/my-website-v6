@@ -11,9 +11,7 @@ export interface Props {
 const { title, description, url, emoji, tags, logo } = Astro.props;
 ---
 
-<li
-  class="block rounded-md border border-gray7 px-4 py-4 transition-effects hover:border-gray8 focus:outline-none focus:ring focus:ring-gray7 dark:border-gray7-dark dark:hover:border-gray8-dark dark:focus:ring-gray7-dark my-7"
->
+<li class="block rounded-md border p-4 my-7">
   <a href={url} target="_blank">
     <div class="flex items-center">
       <img src={logo} width="30px" class="mr-1" />
