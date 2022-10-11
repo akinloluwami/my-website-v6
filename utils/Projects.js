@@ -2,8 +2,32 @@ import ctrlv from "../public/ctrlv.png";
 import messageme from "../public/messageme.png";
 import quickk from "../public/quickk.png";
 import fetiino from "../public/fetiino.png";
+import openfork from "../public/openfork.png";
 
 const projects = [
+  {
+    logo: openfork,
+    name: "Openfork",
+    description: "Find, publish and contribute to open-source projects.",
+    url: "https://github.com/bossoncode/openfork/",
+    emoji:
+      "https://cdn.joypixels.com/products/previews/O6D7BMG8R2DMMNC4LLZH/3151_oeXy1M0pFTMnI3HDYsNLatzxUk5FeHBx.gif",
+    tags: [
+      {
+        icon: "fa-solid fa-code-branch",
+        title: "Open-source AF",
+        bg: "#44d236",
+        text: "#000",
+      },
+      {
+        icon: "fa-solid fa-trowel-bricks",
+        title: "In development",
+
+        bg: "#2962ff",
+        text: "#fff",
+      },
+    ],
+  },
   {
     logo: fetiino,
     name: "Fetiino",
