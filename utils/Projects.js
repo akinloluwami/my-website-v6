@@ -9,7 +9,7 @@ const projects = [
     logo: openfork,
     name: "Openfork",
     description: "Find, publish and contribute to open-source projects.",
-    url: "https://github.com/bossoncode/openfork/",
+    url: "https://openfork.de/",
     emoji:
       "https://cdn.joypixels.com/products/previews/O6D7BMG8R2DMMNC4LLZH/3151_oeXy1M0pFTMnI3HDYsNLatzxUk5FeHBx.gif",
     tags: [
@@ -30,9 +30,9 @@ const projects = [
   },
   {
     logo: fetiino,
-    name: "Fetiino",
+    name: "Vibrant",
     description: "Color tool for designers and developers",
-    url: "https://fetiino-redesign.netlify.app/",
+    url: "https://vibrantt.c/",
     emoji:
       "https://cdn.joypixels.com/products/previews/O6D7BMG8R2DMMNC4LLZH/3151_oeXy1M0pFTMnI3HDYsNLatzxUk5FeHBx.gif",
     tags: [
@@ -43,8 +43,8 @@ const projects = [
         text: "#fff",
       },
       {
-        icon: "fa-solid fa-thumbs-down",
-        title: "Turned down $7k acquisition offer",
+        icon: "fa-solid fa-hear",
+        title: "205 users",
         bg: "#e5494d",
         text: "#fff",
       },
