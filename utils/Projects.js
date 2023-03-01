@@ -30,9 +30,9 @@ const projects = [
   },
   {
     logo: fetiino,
-    name: "Vibrant",
+    name: "Vibrantt",
     description: "Color tool for designers and developers",
-    url: "https://vibrantt.c/",
+    url: "https://vibrantt.co/",
     emoji:
       "https://cdn.joypixels.com/products/previews/O6D7BMG8R2DMMNC4LLZH/3151_oeXy1M0pFTMnI3HDYsNLatzxUk5FeHBx.gif",
     tags: [
