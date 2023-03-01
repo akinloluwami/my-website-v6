@@ -9,7 +9,7 @@ const projects = [
     logo: openfork,
     name: "Openfork",
     description: "Find, publish and contribute to open-source projects.",
-    url: "https://openfork.de/",
+    url: "https://openfork.dev/",
     emoji:
       "https://cdn.joypixels.com/products/previews/O6D7BMG8R2DMMNC4LLZH/3151_oeXy1M0pFTMnI3HDYsNLatzxUk5FeHBx.gif",
     tags: [
